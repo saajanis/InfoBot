@@ -1,0 +1,16 @@
+# -FrontPage-
+
+Options None
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName mietinfo.x10.mx
+AuthUserFile /home/saajanis/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/saajanis/public_html/_vti_pvt/service.grp
